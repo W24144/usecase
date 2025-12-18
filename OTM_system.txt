@@ -1,0 +1,27 @@
+@startuml
+left to right direction
+
+actor 学生 as Student
+actor 教員 as Teacher
+
+rectangle "el-Campus / UNIPA" {
+usecase "ログインする" as UC1
+usecase "授業資料を見る" as UC2
+usecase "課題を提出する" as UC3
+usecase "出欠を確認する" as UC4
+usecase "成績を確認する" as UC5
+usecase "お知らせを見る" as UC6
+}
+
+Student --> UC1
+Student --> UC2
+Student --> UC3
+Student --> UC4
+Student --> UC5
+Student --> UC6
+
+Teacher --> UC1
+Teacher --> UC2
+Teacher --> UC3
+Teacher --> UC6
+@enduml
