@@ -1,4 +1,4 @@
-@startuml
+@startuml sequence2
 participant "Main Function" as Main
 participant "calculate()" as Calc
 participant "getInput()" as In
